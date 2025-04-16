@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Q5-Pizzaria</string>
+    <string name="txt_btnPedido">Faça seu pedido agora!</string>
+    <string name="txt_btnFinalizarPedido">Finalizar pedido</string>
+    <string name="txt_btnProximaEtapa">Próxima etapa</string>
+    <string name="txt_btnVoltarMenuPrincipal">Voltar ao Menu Principal</string>
+
+    <string name="txt_pedidoTitle">Novo Pedido</string>
+
+    <string name="txt_tamanhoPizza">Selecione o tamanho da Pizza:</string>
+    <string name="txt_saborPizzaTitulo">Selecione o sabor da Pizza:</string>
+    <string name="txt_metodoPagamento">Selecione o método de pagamento:</string>
+
+    <string name="txt_pedidoFinalizado">Pedido Finalizado!</string>
+</resources>

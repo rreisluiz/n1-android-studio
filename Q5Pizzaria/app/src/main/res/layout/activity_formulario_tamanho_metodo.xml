@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mainBackground"
+    tools:context=".FormularioSaborPizza">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTituloPedido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:text="Etapa 2" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza" />
+
+        <RadioGroup
+            android:id="@+id/rbgTamanhoPizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtTituloTamanhoPizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_tamanhoPizza" />
+
+            <RadioButton
+                android:id="@+id/rbTamanhoP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tamanho1_title"
+                android:tag="tamanho1" />
+
+            <RadioButton
+                android:id="@+id/rbTamanhoP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tamanho2_title"
+                android:tag="tamanho2" />
+
+            <RadioButton
+                android:id="@+id/rbTamanhoP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tamanho3_title"
+                android:tag="tamanho3" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rbgMetodoPagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtMetodoP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_metodoPagamento" />
+
+            <RadioButton
+                android:id="@+id/txtMetodoP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/metodo1_title"
+                android:tag="metodo1" />
+
+            <RadioButton
+                android:id="@+id/txtMetodoP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/metodo2_title"
+                android:tag="metodo2"/>
+
+            <RadioButton
+                android:id="@+id/rbBebida3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/metodo3_title"
+                android:tag="metodo3"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnFinalizarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:text="@string/txt_btnFinalizarPedido" />
+
+    </LinearLayout>
+</ScrollView>

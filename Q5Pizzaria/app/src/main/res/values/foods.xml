@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sabor1">Marguerita</string>
+    <string name="sabor1_title">%1$s (%2$s)</string>
+    <fraction name="sabor1_price">30%</fraction>
+
+    <string name="sabor2">Frango com Catupiry</string>
+    <string name="sabor2_title">%1$s (%2$s)</string>
+    <fraction name="sabor2_price">40%</fraction>
+
+    <string name="sabor3">Calabresa com Cebola</string>
+    <string name="sabor3_title">%1$s (%2$s)</string>
+    <fraction name="sabor3_price">50%</fraction>
+
+    <string name="tamanho1">Pequena</string>
+    <string name="tamanho1_title">%1$s (%2$s)</string>
+    <fraction name="tamanho1_price">20%</fraction>
+
+    <string name="tamanho2">Média</string>
+    <string name="tamanho2_title">%1$s (%2$s)</string>
+    <fraction name="tamanho2_price">30%</fraction>
+
+    <string name="tamanho3">Grande</string>
+    <string name="tamanho3_title">%1$s (%2$s)</string>
+    <fraction name="tamanho3_price">40%</fraction>
+
+    <string name="metodo1_title">PIX</string>
+
+    <string name="metodo2_title">Crédito</string>
+
+    <string name="metodo3_title">Débito</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rbgProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/products_title"
+            android:textAlignment="center"
+            android:textColor="@color/mainTextColor"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cbProduct1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:tag="prd_arroz"
+            android:text="@string/prd_arroz_title"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/cbProduct2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:tag="prd_leite"
+            android:text="@string/prd_leite_title"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/cbProduct3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:tag="prd_carnefriboi"
+            android:text="@string/prd_carnefriboi_title"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/cbProduct4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:tag="prd_feijaocarioquinha"
+            android:text="@string/prd_feijaocarioquinha_title"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <CheckBox
+            android:id="@+id/cbProduct5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:tag="prd_cocacola"
+            android:text="@string/prd_cocacola_title"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnCalcularTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/mainTextColor"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/btn_total_desc"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/txtValorTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20sp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="@string/txt_valor_total" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

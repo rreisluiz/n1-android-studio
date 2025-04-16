@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Q4-LancheFacil</string>
+    <string name="txt_btnPedido">Faça seu pedido agora!</string>
+    <string name="txt_btnFinalizarPedido">Finalizar pedido</string>
+    <string name="txt_btnVoltarMenuPrincipal">Voltar ao Menu Principal</string>
+    <string name="txt_pedidoTitle">Novo Pedido</string>
+    <string name="txt_formNomeHint">Insira seu nome</string>
+    <string name="txt_lancheTitulo">Selecione seu lanche:</string>
+    <string name="txt_acompanhamentoTitulo">Selecione seu acompanhamento:</string>
+    <string name="txt_bebidaTitulo">Selecione sua bebida:</string>
+    <string name="txt_pedidoFinalizado">Pedido Finalizado!</string>
+</resources>

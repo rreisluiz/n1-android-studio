@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lanche1">BigMac</string>
+    <string name="lanche1_title">%1$s (%2$s)</string>
+    <fraction name="lanche1_price">30%</fraction>
+
+    <string name="lanche2">X-Tudão</string>
+    <string name="lanche2_title">%1$s (%2$s)</string>
+    <fraction name="lanche2_price">40%</fraction>
+
+    <string name="lanche3">McChicken</string>
+    <string name="lanche3_title">%1$s (%2$s)</string>
+    <fraction name="lanche3_price">20%</fraction>
+
+    <string name="acompanhamento1">Batata Frita</string>
+    <string name="acompanhamento1_title">%1$s (%2$s)</string>
+    <fraction name="acompanhamento1_price">15%</fraction>
+
+    <string name="acompanhamento2">Onion Rings</string>
+    <string name="acompanhamento2_title">%1$s (%2$s)</string>
+    <fraction name="acompanhamento2_price">20%</fraction>
+
+    <string name="acompanhamento3">Mix Acompanhamentos</string>
+    <string name="acompanhamento3_title">%1$s (%2$s)</string>
+    <fraction name="acompanhamento3_price">25%</fraction>
+
+    <string name="bebida1">Coca Cuela</string>
+    <string name="bebida1_title">%1$s (%2$s)</string>
+    <fraction name="bebida1_price">10%</fraction>
+
+    <string name="bebida2">Ice Tea</string>
+    <string name="bebida2_title">%1$s (%2$s)</string>
+    <fraction name="bebida2_price">6%</fraction>
+
+    <string name="bebida3">Água</string>
+    <string name="bebida3_title">%1$s (%2$s)</string>
+    <fraction name="bebida3_price">4%</fraction>
+</resources>

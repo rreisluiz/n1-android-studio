@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Q3-TemDeTudo</string>
+    <string name="txt_btnCadastro">Cadastre-se agora!</string>
+    <string name="txt_btnCadastrar">Finalizar cadastro</string>
+    <string name="txt_btnVoltarMenuPrincipal">Voltar ao Menu Principal</string>
+    <string name="txt_cadastroTitle">Cadastro de Cliente</string>
+    <string name="txt_nameFieldHint">Insira seu nome:</string>
+    <string name="logo_loja">Logo da loja TemDeTudo</string>
+</resources>

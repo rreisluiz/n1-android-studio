@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mainBackground"
+    tools:context=".FormularioSaborPizza">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTituloPedido1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:text="Etapa 1" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza" />
+
+        <RadioGroup
+            android:id="@+id/rbgSaborPizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtTituloSaborPizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_saborPizzaTitulo" />
+
+            <RadioButton
+                android:id="@+id/rbSabor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sabor1_title"
+                android:tag="sabor1"/>
+
+            <RadioButton
+                android:id="@+id/rbSabor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sabor2_title"
+                android:tag="sabor2"/>
+
+            <RadioButton
+                android:id="@+id/rbSabor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sabor3_title"
+                android:tag="sabor3"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnProximaEtapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:text="@string/txt_btnProximaEtapa" />
+
+    </LinearLayout>
+</ScrollView>

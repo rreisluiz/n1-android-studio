@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prd_arroz_title">Arroz 1 Kg (%1$s)</string>
+    <fraction name="prd_arroz_price">2.69%</fraction>
+
+    <string name="prd_leite_title">Leite Longa Vida (%1$s)</string>
+    <fraction name="prd_leite_price">2.70%</fraction>
+
+    <string name="prd_carnefriboi_title">Carne Friboi (%1$s)</string>
+    <fraction name="prd_carnefriboi_price">16.70%</fraction>
+
+    <string name="prd_feijaocarioquinha_title">Feijão carioquinha 1 Kg (%1$s)</string>
+    <fraction name="prd_feijaocarioquinha_price">3.38%</fraction>
+
+    <string name="prd_cocacola_title">Refrigerante coca-cola 2 litros (%1$s)</string>
+    <fraction name="prd_cocacola_price">3.00%</fraction>
+
+</resources>

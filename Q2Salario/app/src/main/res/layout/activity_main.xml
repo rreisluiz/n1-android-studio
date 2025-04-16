@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="@string/txt_calculo_salario" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu Salário:">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etValorSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789,."
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLines="1"
+            android:textLocale="pt-BR"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rbgAumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAumento1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:text="0%"
+            android:tag="raise1"/>
+
+        <RadioButton
+            android:id="@+id/rbAumento2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:text="0%"
+            android:tag="raise2"/>
+
+        <RadioButton
+            android:id="@+id/rbAumento3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textFontWeight="400"
+            android:textSize="20sp"
+            android:text="0%"
+            android:tag="raise3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcularAumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="10dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/txtValorAumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:text="..." />
+
+</LinearLayout>

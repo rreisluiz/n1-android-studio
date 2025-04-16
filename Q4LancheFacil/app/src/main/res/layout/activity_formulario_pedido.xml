@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/mainBackground"
+    tools:context=".FormularioPedido">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTituloPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:text="@string/txt_pedidoTitle" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/order" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:hint="@string/txt_formNomeHint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNomeCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonBackground"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:maxLines="1"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rbgLanche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtTituloLanches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_lancheTitulo" />
+
+            <RadioButton
+                android:id="@+id/rbLanche1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lanche1_title"
+                android:tag="lanche1"/>
+
+            <RadioButton
+                android:id="@+id/rbLanche2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lanche2_title"
+                android:tag="lanche2"/>
+
+            <RadioButton
+                android:id="@+id/rbLanche3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lanche3_title"
+                android:tag="lanche3"/>
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rbgAcompanhamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtTituloAcompanhamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_acompanhamentoTitulo" />
+
+            <RadioButton
+                android:id="@+id/rbAcompanhamento1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acompanhamento1_title"
+                android:tag="acompanhamento1" />
+
+            <RadioButton
+                android:id="@+id/rbAcompanhamento2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acompanhamento2_title"
+                android:tag="acompanhamento2" />
+
+            <RadioButton
+                android:id="@+id/rbAcompanhamento3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acompanhamento3_title"
+                android:tag="acompanhamento3" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rbgBebida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/buttonBackground">
+
+            <TextView
+                android:id="@+id/txtTituloBebidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="italic"
+                android:text="@string/txt_bebidaTitulo" />
+
+            <RadioButton
+                android:id="@+id/rbBebida1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bebida1_title"
+                android:tag="bebida1" />
+
+            <RadioButton
+                android:id="@+id/rbBebida2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bebida2_title"
+                android:tag="bebida2"/>
+
+            <RadioButton
+                android:id="@+id/rbBebida3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bebida3_title"
+                android:tag="bebida3"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnFinalizarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttonBackground"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:text="@string/txt_btnFinalizarPedido" />
+
+    </LinearLayout>
+</ScrollView>
